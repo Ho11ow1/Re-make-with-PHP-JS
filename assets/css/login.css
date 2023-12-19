@@ -23,6 +23,9 @@ html{
 
 body{
     font-family:'Poppins', sans-serif;
+    height:97.9dvh;
+
+    background: linear-gradient(0deg, rgba(255,182,193,1) 0%, rgba(38,35,35,0.4108018207282913) 100%);
 }
 
 h1,
@@ -62,3 +65,103 @@ img{
 .flex{
     display:flex;
 }
+
+/* ==================== NAVIGATION CSS ==================== */
+
+.nav {
+    margin-top:1.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: calc(3.5rem + 1.5rem);
+    column-gap: 3rem;
+}
+
+.container {
+    max-width: 1750px;
+    width:100%;
+
+    margin-left: auto;
+    margin-right: auto;
+    padding-right:1rem;
+    padding-left:1rem;
+}
+
+.nav__menu {
+    margin-left: auto;
+}
+
+.nav__list{
+    display:flex;
+    column-gap:2rem;
+}
+
+.nav__img{
+    height:200px;
+    width:150px;
+    object-fit:contain;
+}
+
+/*==================== FORM CSS ====================*/
+
+.login{
+    grid-template-columns:repeat(2, 1fr);
+    place-items:center;
+    column-gap:1.5rem;
+
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:18rem;
+
+    max-width:600px;
+}
+
+.section-title{
+    color:var(--black);
+    font-weight:600;
+    font-size:26px;
+}
+
+.section-title > sup{
+    color:var(--pink);
+    font-weight:600;
+    font-size:24px;
+}
+
+.Main-form{
+    display:grid;
+    grid-template-columns:repeat(1, 1fr);
+    row-gap:1rem;
+}
+
+input{
+    width:250px;
+	height:30px;
+
+    font-size:16px;
+	font-weight:500;
+    color:var(--white);
+
+    padding:4px;
+
+    background:transparent;
+    border:var(--white) 1px solid;
+    border-radius:2px;
+}
+
+button > a{
+    color:var(--black);
+}
+
+button{
+    background:var(--white);
+	border: 1px solid var(--white);
+    border-radius:2px;
+
+    font-size:16px;
+	font-weight:400;
+
+    padding:6px;
+}
+
