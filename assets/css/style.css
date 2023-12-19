@@ -9,7 +9,6 @@
     --light-gray: #707070;
 
     --hero-color:#B1E0E9;
-    --background-color:#FFD4FA;
 }
 
 *{
@@ -67,7 +66,7 @@ img{
 /* ==================== NAVIGATION CSS ==================== */
 
 .nav {
-    margin-top:2.25rem;
+    margin-top:1.25rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -79,6 +78,7 @@ img{
 .container {
     max-width: 1750px;
     width:100%;
+
     margin-left: auto;
     margin-right: auto;
     padding-right:1rem;
@@ -89,17 +89,71 @@ img{
     margin-left: auto;
 }
 
+.nav__list{
+    display:flex;
+    column-gap:2rem;
+}
+
 .nav__img{
+    height:200px;
+    width:150px;
     object-fit:contain;
 }
 
 /* ==================== BANNER CSS ==================== */
 
+.banner{
+    overflow-x:hidden;
+    overflow-y:hidden;
+    background: #120f0f;
 
+    margin-top:1rem;
+}
+
+.banner-animation{
+    align-items:center;
+    height:8.25rem;
+    max-width:fit-content;
+    animation:banners 24s linear infinite;
+    will-change:transform;
+}
+
+@keyframes banners
+{
+    0% {
+        transform:translate(0);
+    }
+    
+    100% {
+        transform:translate(-25%);
+    }
+}
+
+.banner-img{
+    width:8rem;
+    height:3.75rem;
+    margin:0 2rem;
+}
 
 /* ==================== MAIN VIEW 100%vh CSS ==================== */
 
+.Main-view{
+    grid-template-columns:repeat(2, 1fr);
 
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.rand{
+    margin-top:2rem;
+
+    width:600px;
+    height:600px;
+
+    border:4px solid #2A2A2A;
+    border-radius:15%;
+    background:#2A2A2A;
+}
 
 /* ==================== FOOTER CSS ====================*/
 
