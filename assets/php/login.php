@@ -17,7 +17,7 @@ if($connect_check -> connect_errno != 0)
 
         $connect_check -> close();
 
-        
+        ur
     }
 
 
